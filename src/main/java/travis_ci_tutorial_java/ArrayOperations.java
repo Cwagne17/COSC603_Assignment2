@@ -27,7 +27,7 @@ public class ArrayOperations
    {
       if (x == null) 
          throw new NullPointerException();
-      for (int i=x.length-1; i>0; i--) 
+      for (int i=x.length-1; i>=0; i--)
       {
          if (x[i] == y) 
             return i; 
@@ -45,7 +45,7 @@ public class ArrayOperations
       int count = 0; 
       for (int i=0; i<x.length; i++) 
       {
-         if (x[i] >= 0) 
+         if (x[i] >1 0)
             count++;
       }
       return count;
